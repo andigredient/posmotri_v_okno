@@ -223,6 +223,13 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   background-color: #fff;
 }
 
+.search-form__pseudo-checkbox:active::after {
+  content: "";
+  min-inline-size: 15px;
+  min-block-size: 15px;
+  background-color: #fff;  
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -270,6 +277,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__video-card-thumbnail {
+  object-fit: cover;
   width: 194px;
   height: 106px;
   padding: 2px 2px 2px 0;
@@ -328,4 +336,8 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
+}
+
+.content__card-link:active {
+  background-color: #545050;  
 }
